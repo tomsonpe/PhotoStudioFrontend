@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.assignmenttp" >
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <application
+        android:name=".config.util.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name=".service.customer.birthdayParty.implem.BirthdayPartyServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.birthdayParty.implem.UpdateBirthdayPartyServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.funeral.implem.UpdateFuneralServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.graduation.implem.UpdateGraduationServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.others.implem.UpdateOthersServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.rel.implem.UpdateReligionServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.funeral.implem.FuneralServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.graduation.implem.AddGraduationServiceImplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.others.implem.AddOthersServiceimplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.rel.implem.AddReligionServiceimplem"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.customer.employees.photo.implem.AddPhotoTakerService"
+            android:enabled="true"
+            android:exported="false" />
+        <activity android:name=".AddPhotoTaker">
+            <intent-filter>
+                <action android:name="com.assignmenttp.AddPhotoTaker" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DisplayPhotoTaker">
+            <intent-filter>
+                <action android:name="com.assignmenttp.DisplayPhotoTaker" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PreviewTaker">
+            <intent-filter>
+                <action android:name="com.assignmenttp.PreviewTaker" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
